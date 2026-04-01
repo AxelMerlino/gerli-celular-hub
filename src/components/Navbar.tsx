@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Menu, X, Smartphone } from "lucide-react";
+import { Menu, X, Pizza } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Productos", href: "#productos" },
-  { label: "Servicios", href: "#servicios" },
+  { label: "Menú", href: "#menu" },
+  { label: "Nosotros", href: "#nosotros" },
   { label: "Opiniones", href: "#opiniones" },
   { label: "Contacto", href: "#contacto" },
 ];
@@ -18,10 +18,10 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#inicio" className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-lg gradient-hero flex items-center justify-center">
-            <Smartphone className="w-5 h-5 text-primary-foreground" />
+            <Pizza className="w-5 h-5 text-primary-foreground" />
           </div>
           <span className="font-display font-bold text-lg text-foreground">
-            El Mundo del Celular
+            La Aceituna Negra
           </span>
         </a>
 
@@ -39,9 +39,9 @@ const Navbar = () => {
             href="https://wa.me/5491100000000"
             target="_blank"
             rel="noopener noreferrer"
-            className="gradient-hero text-primary-foreground text-sm font-semibold px-5 py-2 rounded-lg hover:opacity-90 transition-opacity"
+            className="gradient-warm text-primary-foreground text-sm font-semibold px-5 py-2 rounded-lg hover:opacity-90 transition-opacity"
           >
-            WhatsApp
+            Pedí Ahora
           </a>
         </div>
 
@@ -77,9 +77,9 @@ const Navbar = () => {
                 href="https://wa.me/5491100000000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-hero text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-lg text-center"
+                className="gradient-warm text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-lg text-center"
               >
-                WhatsApp
+                Pedí Ahora
               </a>
             </div>
           </motion.div>
